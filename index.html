@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa Agrinho 2026</title>
+    <style>
+        /* Reset de estilos básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f9f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho / Menu */
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #a5d6a7;
+        }
+
+        /* Banner Principal */
+        .hero {
+            background: linear-gradient(rgba(46, 125, 50, 0.8), rgba(27, 94, 32, 0.9)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?ixlib=rb-4.0.3') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 6rem 2rem;
+        }
+
+        .hero h2 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 20px auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ff9800;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e65100;
+        }
+
+        /* Seções de Conteúdo */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #1b5e20;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #ff9800;
+            margin: 10px auto 0 auto;
+            border-radius: 2px;
+        }
+
+        /* Cards / Categorias */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-top: 5px solid #2e7d32;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav {
+                margin-top: 10px;
+            }
+            nav a {
+                margin: 0 7px;
+            }
+            .hero h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌱 Agrinho 2026</h1>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#temas">Temas</a>
+            <a href="#categorias">Categorias</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Concurso Agrinho 2026</h2>
+        <p>Incentivando a criatividade, a sustentabilidade e a conexão entre o campo e a cidade para transformar o futuro da educação.</p>
+        <a href="https://www.sistemafaep.org.br/agrinho/" target="_blank" class="btn">Saber Mais</a>
+    </section>
+
+    <section id="sobre" class="container">
+        <h2 class="section-title">Sobre o Programa</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+            O Programa Agrinho é a maior iniciativa de responsabilidade social do Sistema FAEP/SENAR. Há décadas, ele mobiliza milhares de estudantes e professores da educação básica, promovendo debates fundamentais sobre ética, cidadania, meio ambiente e produção sustentável.
+        </p>
+    </section>
+
+    <section id="temas" style="background-color: #e8f5e9;">
+        <div class="container">
+            <h2 class="section-title">Eixos e Temas Centrais</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>🔗 Conexões que Transformam</h3>
+                    <p>Uma reflexão profunda sobre a relação de interdependência entre o campo e a cidade, mostrando como ambos se completam e geram valor juntos.</p>
+                </div>
+                <div class="card">
+                    <h3>🌾 Agro Forte, Futuro Sustentável</h3>
+                    <p>O equilíbrio perfeito entre a alta produção de alimentos e a preservação do meio ambiente através de práticas agrícolas conscientes.</p>
+                </div>
+                <div class="card">
+                    <h3>🚀 Tecnologia e Inovação</h3>
+                    <p>A robótica, a programação e a pesquisa digital transformando a realidade das escolas e aproximando os jovens do ecossistema tecnológico atual.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="categorias" class="container">
+        <h2 class="section-title">Principais Categorias</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>🎨 Desenho e Redação</h3>
+                <p>Espaço para os alunos do ensino fundamental e médio expressarem suas ideias de forma artística e literária sobre o tema do ano.</p>
+            </div>
+            <div class="card">
+                <h3>🤖 Robótica e Programação</h3>
+                <p>Estudantes desenvolvem projetos automatizados e soluções tecnológicas voltadas para resolver problemas reais do cotidiano rural.</p>
+            </div>
+            <div class="card">
+                <h3>👩‍🏫 Experiência Pedagógica</h3>
+                <p>Categoria dedicada a premiar os professores que desenvolvem projetos inovadores e transformadores dentro das salas de aula.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 - Website Educativo sobre o Programa Agrinho. Desenvolvido para fins didáticos.</p>
+    </footer>
+
+</body>
+</html>
